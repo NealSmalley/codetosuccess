@@ -1,0 +1,30 @@
+/*Helper*//*space between square stuff and main text*/
+.spacer60 {
+    height: 60px;
+    width: 100%;
+}
+
+.anchor-link{
+    text-decoration: none;
+}
+
+
+.anchor-link:focus{
+    outline:none;
+}
+/*puts content before element selected*/
+.anchor-link h1::before {
+    content: "I'm before - "
+}
+
+.anchor-link h1::after {
+    /*allows you to select item on page and add content*/
+    content: " - I'm after"
+}
+/*puts content after element selected*/
+.anchor-link h1::after {
+    font-family:"Font Awesome 5 Free";
+    /*unicode link*/
+    content: " \f0c1";
+    font-weight: 900;
+}
